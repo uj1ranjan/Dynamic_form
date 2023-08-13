@@ -1,0 +1,37 @@
+[
+    {
+        "page_label": "Create Distribution List",
+        "fields": [
+            {
+                "field_id": "Primary Owner name",
+                "field_label": "Primary Owner name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Primary Owner name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "Requested For",
+                "field_label": "Requested For",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested For",
+                "field_type": "text"
+            },
+            {
+                "field_id": "DL Name",
+                "field_label": "DL Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter DL Name",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Requested By",
+                "field_label": "Requested By",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested By",
+                "field_type": "text"
+            }
+            
+        ]
+    }
+]

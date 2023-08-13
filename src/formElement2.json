@@ -1,0 +1,44 @@
+[
+    {
+        "page_label": "Set MailBox Quota",
+        "fields": [
+            {
+                "field_id": "Account name",
+                "field_label": "Account Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Account name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "MailBox Size",
+                "field_label": "Mail Box Size",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter MailBox Size",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Requested By",
+                "field_label": "Requested By",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested By",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Requested For",
+                "field_label": "Requested For",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Special Instructions",
+                "field_label": "Special Instructions",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Special Instructions",
+                "field_type": "text"
+            }
+            
+        ]
+    }
+]

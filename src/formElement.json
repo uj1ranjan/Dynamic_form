@@ -1,0 +1,69 @@
+[
+    {
+        "page_label": "Shared Mailbox",
+        "fields": [
+            {
+                "field_id": "shared_mailbox_name",
+                "field_label": "Mailbox Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter shared mailbox name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "alias",
+                "field_label": "Alias",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter alias",
+                "field_type": "text"
+            },
+            {
+                "field_id": "email",
+                "field_label": "Email",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter email",
+                "field_type": "text"
+            },
+            {
+                "field_id": "owner",
+                "field_label": "Owner",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter owner name",
+                "field_type": "text"
+            },
+            {
+                "field_id": "mailbox_users",
+                "field_label": "Mailbox Users",
+                "field_value": "Part-Time",
+                "field_mandatory": "yes",
+                "field_options": [
+                    {
+                        "option_label": "URanjan@its.jnj.com"
+                    },
+                    {
+                        "option_label": "Neeraj@its.jnj.com"
+                    }
+                ],
+                "field_type": "select"
+            },
+            {
+                "field_id": "full_access",
+                "field_label": "I confirm to have full-Access license.",
+                "field_type": "checkbox",
+                "field_value": "checked"
+            },
+            {
+                "field_id": "send_as",
+                "field_label": "I confirm to have Send Access.",
+                "field_type": "checkbox",
+                "field_value": "checked"
+            },
+            {
+                "field_id": "calendar_access",
+                "field_label": "I confirm to have Calender Access.",
+                "field_type": "checkbox",
+                "field_value": "checked"
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    margin-top: 10px;
+    height: calc(100vh - 50px);
+    top: 50px;
+    position: fixed;
+    max-width: fit-content;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
