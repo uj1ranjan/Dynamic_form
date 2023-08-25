@@ -13,30 +13,21 @@ function Form() {
   const { fields, page_label } = elements ?? {}
   const handleSubmit = (event) => {
       event.preventDefault();
-      // create a new XMLHttpRequest
-      var xhr = new XMLHttpRequest()
+      //create a new XMLHttpRequest
+      const xhr = new XMLHttpRequest()
   
-      // get a callback when the server responds
+      //get a callback when the server responds
       xhr.addEventListener('load', () => {
-        // update the state of the component with the result here
-        //console.log(xhr.responseText)
+        //update the state of the component with the result here
+        console.log(xhr.responseText)
       })
       // open the request with the verb and the url
-      //xhr.open('POST', 'https://597382c6-0a31-4518-97aa-bbb9a426bb1c.webhook.eus.azure-automation.net/webhooks?token=6Wt2dI3XHwYtE738VQ%2bDSPFrd7UL8l9L%2bToGSl7qra8%3d')
+      xhr.open('GET', 'https://597382c6-0a31-4518-97aa-bbb9a426bb1c.webhook.eus.azure-automation.net/webhooks?token=6Wt2dI3XHwYtE738VQ%2bDSPFrd7UL8l9L%2bToGSl7qra8%3d')
       // send the request
-      //xhr.send(JSON.stringify({ example: 'data' }))
-      var data = []
+      xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
+      const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
       
-        for(var i in elements.fields) {    
-          var items = elements.fields[i];
-          //console.log(items)
-        }
-        
-        data.push({ 
-            "field" : items.field_id,
-            "value"  : items.field_value
-        });
-        console.log(data)
+      xhr.send(JSON.stringify(data))
       
     }
   const handleChange = (id, event) => {

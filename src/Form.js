@@ -24,9 +24,11 @@ function Form() {
       // open the request with the verb and the url
       xhr.open('POST', 'https://597382c6-0a31-4518-97aa-bbb9a426bb1c.webhook.eus.azure-automation.net/webhooks?token=6Wt2dI3XHwYtE738VQ%2bDSPFrd7UL8l9L%2bToGSl7qra8%3d')
       // send the request
-      xhr.send(JSON.stringify({ example: 'data' }))
+      xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
 
-      console.log(elements)
+      const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
+      xhr.send(JSON.stringify(data))
+
   }
   const handleChange = (id, event) => {
     const newElements = { ...elements }
