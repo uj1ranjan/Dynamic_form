@@ -1,0 +1,72 @@
+[
+    {
+        "page_label": "Provision MS Teams",
+        "fields": [
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Team_Name",
+                "field_label": "Team Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Team Name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "Team_Description",
+                "field_label": "Team Description",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Team Description",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Privacy_Setting",
+                "field_label": "Privacy Setting",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Privacy Setting",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Primary_Owner",
+                "field_label": "Primary Owner",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Primary Owner",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Members",
+                "field_label": "Members",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Members",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Requested For",
+                "field_label": "Requested For",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested For",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Requested By",
+                "field_label": "Requested By",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested By",
+                "field_type": "text"
+            }
+            
+        ]
+    }
+]

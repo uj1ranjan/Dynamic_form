@@ -1,8 +1,8 @@
-import formJSON from './formElement3.json';
+import formJSON from '../formElement/formElement6.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
-import Element from './components/Element';
-import { FormContext } from './FormContext';
+import Element from '../components/Element';
+import { FormContext } from '../FormContext';
 
 function Form() {
   const [elements, setElements] = useState(null);
@@ -40,12 +40,17 @@ function Form() {
   return (
     <FormContext.Provider value={{ handleChange }}>
       <div className="App_container">
-        <h3>{page_label}</h3>
-        <form>
-          {fields ? fields.map((field, i) => <Element key={i} field={field} />) : null}
-          <button type="submit" className="btn btn-primary" onClick={(e) => handleSubmit(e)}>Submit</button>
-        </form>
-
+        <div className= "header">
+          <h3>{page_label}</h3>
+        </div>
+        <div className='div_content'>
+          <form>
+            {fields ? fields.map((field, i) => <Element key={i} field={field} />) : null}
+            <div className='button1'>
+              <button type="submit" className="btn btn-primary" onClick={(e) => handleSubmit(e)}>Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </FormContext.Provider>
   );

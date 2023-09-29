@@ -1,0 +1,51 @@
+[
+    {
+        "page_label": "Set MailBox Quota",
+        "fields": [
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "email_id",
+                "field_label": "Email id",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Account name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "warningquota",
+                "field_label": "Warning quota",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter MailBox Size",
+                "field_type": "text"
+            },
+            {
+                "field_id": "sendquota",
+                "field_label": "Send quota",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested By",
+                "field_type": "text"
+            },
+            {
+                "field_id": "receivequota",
+                "field_label": "Receive quota",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            }
+            
+        ]
+    }
+]

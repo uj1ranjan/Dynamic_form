@@ -1,0 +1,31 @@
+[
+    {
+        "page_label": "MailBox Deletion",
+        "fields": [
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "user_name",
+                "field_label": "User Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Account name",
+                "field_type": "text",
+                "field_value": ""
+            }
+            
+            
+        ]
+    }
+]

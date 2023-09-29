@@ -63,6 +63,20 @@
                 "field_label": "I confirm to have Calender Access.",
                 "field_type": "checkbox",
                 "field_value": "checked"
+            },
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
             }
         ]
     }

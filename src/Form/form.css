@@ -1,0 +1,19 @@
+.App_container{
+    margin-top: 30px;
+    flex-direction: row;
+    position: relative;
+    overflow-y: scroll;
+    margin-left: 100px;
+}
+
+.button1{
+    padding-bottom: 20px;
+}
+
+.header{
+    width: 980px;
+}
+
+.div_content{
+    width: 980px;
+}

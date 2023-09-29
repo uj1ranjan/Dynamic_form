@@ -36,7 +36,6 @@
   
   .sidebarListItem.active,
   .sidebarListItem:hover {
-    background-color: rgb(240, 240, 255);
     font-family: 'Segoe UI';
   }
   

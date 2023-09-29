@@ -1,20 +1,27 @@
 [
     {
-        "page_label": "Set MailBox Quota",
+        "page_label": "Create Distribution List",
         "fields": [
             {
-                "field_id": "Account name",
-                "field_label": "Account Name",
+                "field_id": "Primary Owner name",
+                "field_label": "Primary Owner name",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Account name",
+                "field_placeholder": "Enter Primary Owner name",
                 "field_type": "text",
                 "field_value": ""
             },
             {
-                "field_id": "MailBox Size",
-                "field_label": "Mail Box Size",
+                "field_id": "Requested For",
+                "field_label": "Requested For",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter MailBox Size",
+                "field_placeholder": "Enter Requested For",
+                "field_type": "text"
+            },
+            {
+                "field_id": "DL Name",
+                "field_label": "DL Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter DL Name",
                 "field_type": "text"
             },
             {
@@ -25,17 +32,17 @@
                 "field_type": "text"
             },
             {
-                "field_id": "Requested For",
-                "field_label": "Requested For",
+                "field_id": "scTask",
+                "field_label": "sc Task",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter Requested for",
                 "field_type": "text"
             },
             {
-                "field_id": "Special Instructions",
-                "field_label": "Special Instructions",
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Special Instructions",
+                "field_placeholder": "Enter Requested for",
                 "field_type": "text"
             }
             

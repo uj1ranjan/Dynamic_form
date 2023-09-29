@@ -1,8 +1,9 @@
-import formJSON from './formElement2.json';
+import formJSON from '../formElement/formElement2.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
-import Element from './components/Element';
-import { FormContext } from './FormContext';
+import Element from '../components/Element';
+import { FormContext } from '../FormContext';
+import swal from 'sweetalert';
 
 function Form() {
   const [elements, setElements] = useState(null);
@@ -22,12 +23,27 @@ function Form() {
         console.log(xhr.responseText)
       })
       // open the request with the verb and the url
-      xhr.open('GET', 'https://597382c6-0a31-4518-97aa-bbb9a426bb1c.webhook.eus.azure-automation.net/webhooks?token=6Wt2dI3XHwYtE738VQ%2bDSPFrd7UL8l9L%2bToGSl7qra8%3d')
+      xhr.open('POST', 'https://51c75f29-fc28-4c77-8845-3c8e3ce99f6b.webhook.eus.azure-automation.net/webhooks?token=vtFsWGTcM1KAwUFofXiSQABDlWCPME0SFjMLZ4GUV%2bs%3d')
       // send the request
-      xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
+      //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
       const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
       
+      
       xhr.send(JSON.stringify(data))
+
+      if(xhr.status === 0){
+
+        swal({
+          title: "Success!",
+          text: "Form Submitted Successfully",
+          icon: "success",
+          button: "ok!",
+        });
+        window.onload = setTimeout(function(){
+          window.location.reload();
+          alert('your Request has been initiated successfully you will be notified once it is Completed');
+        }, 17000);
+      }
       
     }
   const handleChange = (id, event) => {
@@ -54,12 +70,17 @@ function Form() {
   return (
     <FormContext.Provider value={{ handleChange }}>
       <div className="App_container">
-        <h3>{page_label}</h3>
-        <form>
-          {fields ? fields.map((field, i) => <Element key={i} field={field} />) : null}
-          <button type="submit" className="btn btn-primary" onClick={(e) => handleSubmit(e)}>Submit</button>
-        </form>
-
+        <div className= "header">
+          <h3>{page_label}</h3>
+        </div>
+        <div className='div_content'>
+          <form>
+            {fields ? fields.map((field, i) => <Element key={i} field={field} />) : null}
+            <div className='button1'>
+              <button type="submit" className="btn btn-primary" onClick={(e) => handleSubmit(e)}>Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </FormContext.Provider>
   );

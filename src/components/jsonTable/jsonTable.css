@@ -1,0 +1,21 @@
+.jsonTable{
+
+    
+
+    .dataGrid{
+        background: white;
+        padding: 20px;
+    }
+
+    .actiony{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(236, 236, 252);
+        text-transform: lowercase;
+    }
+    
+    
+
+}
+

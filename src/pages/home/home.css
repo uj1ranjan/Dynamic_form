@@ -6,3 +6,10 @@
     display: flex;
     margin: 20px;
 }
+
+.heading{
+    text-align: center;
+    font-family: 'Segoe UI';
+    margin-bottom: 30px;
+    color: grey;
+}

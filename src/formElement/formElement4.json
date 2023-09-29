@@ -1,0 +1,107 @@
+[
+    {
+        "page_label": "Manage Mailbox Permission",
+        "fields": [
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Request_type",
+                "field_label": "Request Type",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter shared mailbox name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "Mailbox_name",
+                "field_label": "Mailbox Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter alias",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Mailbox_Domain_Name",
+                "field_label": "Mailbox Domain Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter email",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Group_mailbox",
+                "field_label": "Group Mailbox",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter owner name",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Access_Rights",
+                "field_label": "Access Rights",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter owner name",
+                "field_type": "text"
+            },
+            {
+                "field_id": "User_Credentials",
+                "field_label": "User Credentials requiring access",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter owner name",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Inheritance_Type",
+                "field_label": "Inheritance Type",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter owner name",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Mailbox_Owner_is_Active?",
+                "field_label": "Mailbox Owner is Active?",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter owner name",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Requested For",
+                "field_label": "Requested For",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested For",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Requested By",
+                "field_label": "Requested By",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested By",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Business_Justification",
+                "field_label": "Business Justification",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested By",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Additional_comments",
+                "field_label": "Additional comments",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested By",
+                "field_type": "text"
+            }
+            
+        ]
+    }
+]

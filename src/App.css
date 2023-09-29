@@ -4,7 +4,7 @@
     height: calc(100vh - 50px);
     top: 50px;
     position: fixed;
-    max-width: fit-content;
+    max-width: max-content;
 }
 
 .link{

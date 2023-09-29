@@ -7,7 +7,7 @@ export default function FeaturedInfo() {
     <div className="featured">
       <div className="featuredItem">
         <div className="featuredheading">
-          <h3>Shared Mailbox</h3>
+          <h3>Create Shared Mailbox</h3>
         </div>
         <span className="featuredSub">Raise a shared mailbox service request with the following detals - Mailbox name, mailbox alias, email id, users to be added, permissions for full access, send as, and Calendar Access. Ask for th details from the user.</span>
         <div class="center">
