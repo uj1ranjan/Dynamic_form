@@ -1,4 +1,4 @@
-import formJSON from '../formElement/formElement6.json';
+import formJSON from '../formElement/provisionMSTeams.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
 import Element from '../components/Element';

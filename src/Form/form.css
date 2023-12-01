@@ -1,9 +1,8 @@
 .App_container{
-    margin-top: 30px;
     flex-direction: row;
-    position: relative;
+    position: sticky;
     overflow-y: scroll;
-    margin-left: 100px;
+    margin-left: 40px;
 }
 
 .button1{
@@ -12,6 +11,11 @@
 
 .header{
     width: 980px;
+    margin-top: 50px;
+}
+.header2{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .div_content{

@@ -1,4 +1,4 @@
-import formJSON from '../formElement/modifyPrimarySMTP.json';
+import formJSON from '../formElement/UpdateLitigationHold.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
 import Element from '../components/Element';

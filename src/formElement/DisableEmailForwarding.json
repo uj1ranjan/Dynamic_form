@@ -1,6 +1,10 @@
 [
     {
-        "page_label": "MailBox Deletion",
+        "page_label": "Disable Email Forwarding",
+        "Description": "Disable Email Forwarding",
+        "WebhookURL": "https://01f82afc-7bfc-431f-b71e-cc4f75976387.webhook.eus.azure-automation.net/webhooks?token=JN%2bHsE1h3LX0PdceVywNaSlKxAdM6Z84FF7Sfis9WNM%3d",
+        "Request_type": "emailForwarding",
+        "Source": "SelfService",
         "fields": [
             {
                 "field_id": "scTask",
@@ -17,15 +21,13 @@
                 "field_type": "text"
             },
             {
-                "field_id": "user_name",
-                "field_label": "User Name",
+                "field_id": "Disable Email Forwarding",
+                "field_label": "Add Disable Email Forwarding",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Account name",
-                "field_type": "text",
-                "field_value": ""
+                "field_placeholder": "Enter Disable Email Forwarding",
+                "field_type": "text"
             }
-            
-            
         ]
     }
+            
 ]

@@ -1,0 +1,33 @@
+[
+    {
+        "page_label": "Enable Online Archive",
+        "Description": "Raise a request to enable online Archive for your mailbox by providing the identity details",
+        "WebhookURL": "https://01f82afc-7bfc-431f-b71e-cc4f75976387.webhook.eus.azure-automation.net/webhooks?token=JN%2bHsE1h3LX0PdceVywNaSlKxAdM6Z84FF7Sfis9WNM%3d",
+        "Request_type": "enableOnlineArchive",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Enable Online Archive",
+                "field_label": "Add Enable Online Archive",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Enable Online Archive",
+                "field_type": "text"
+            }
+        ]
+    }
+            
+]

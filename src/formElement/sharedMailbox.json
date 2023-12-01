@@ -1,7 +1,33 @@
 [
     {
         "page_label": "Shared Mailbox",
+        "WebhookURL": "https://597382c6-0a31-4518-97aa-bbb9a426bb1c.webhook.eus.azure-automation.net/webhooks?token=6Wt2dI3XHwYtE738VQ%2bDSPFrd7UL8l9L%2bToGSl7qra8%3d",
+        "Request_type":"",
         "fields": [
+            {
+                "field_id": "SCTaskNo",
+                "field_label": "SC TaskNo",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id":"Source",
+                "field_value":"Self Service",
+                "field_label": "Source",
+                "field_mandatory":"yes",
+                "field_type":"text"
+                
+                
+
+            },
             {
                 "field_id": "shared_mailbox_name",
                 "field_label": "Mailbox Name",
@@ -63,21 +89,8 @@
                 "field_label": "I confirm to have Calender Access.",
                 "field_type": "checkbox",
                 "field_value": "checked"
-            },
-            {
-                "field_id": "scTask",
-                "field_label": "sc Task",
-                "field_mandatory": "yes",
-                "field_placeholder": "Enter Requested for",
-                "field_type": "text"
-            },
-            {
-                "field_id": "RITM Number",
-                "field_label": "RITM No.",
-                "field_mandatory": "yes",
-                "field_placeholder": "Enter Requested for",
-                "field_type": "text"
             }
+            
         ]
     }
 ]

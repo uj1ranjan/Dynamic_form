@@ -1,0 +1,40 @@
+[
+    {
+        "page_label": "Add Secondary SMTP Address",
+        "Description": "Add SMTP Address",
+        "WebhookURL": "https://01f82afc-7bfc-431f-b71e-cc4f75976387.webhook.eus.azure-automation.net/webhooks?token=JN%2bHsE1h3LX0PdceVywNaSlKxAdM6Z84FF7Sfis9WNM%3d",
+        "Request_type": "AddSecondarySMTP",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "tasknumber",
+                "field_label": "task number",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "ritmnumber",
+                "field_label": "RITM Number",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "AddSecondarySMTP",
+                "field_label": "Add Secondary SMTP",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Add Secondary SMTP",
+                "field_type": "text"
+            },
+            {
+                "field_id": "EmailAddress",
+                "field_label": "New Email Address",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter New Email Address",
+                "field_type": "text"
+            }
+        ]
+    }
+            
+]

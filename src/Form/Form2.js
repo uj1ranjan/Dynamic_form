@@ -1,4 +1,4 @@
-import formJSON from '../formElement/formElement2.json';
+import formJSON from '../formElement/setMailboxQuota.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
 import Element from '../components/Element';
@@ -11,7 +11,7 @@ function Form() {
     setElements(formJSON[0])
 
   }, [])
-  const { fields, page_label } = elements ?? {}
+  const { fields, page_label, Description, webhookURL } = elements ?? {}
   const handleSubmit = (event) => {
       event.preventDefault();
       //create a new XMLHttpRequest
@@ -23,7 +23,8 @@ function Form() {
         console.log(xhr.responseText)
       })
       // open the request with the verb and the url
-      xhr.open('POST', 'https://51c75f29-fc28-4c77-8845-3c8e3ce99f6b.webhook.eus.azure-automation.net/webhooks?token=vtFsWGTcM1KAwUFofXiSQABDlWCPME0SFjMLZ4GUV%2bs%3d')
+      xhr.open('POST', webhookURL)
+      console.log(webhookURL)
       // send the request
       //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
       const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
@@ -31,7 +32,7 @@ function Form() {
       
       xhr.send(JSON.stringify(data))
 
-      if(xhr.status === 0){
+      if(xhr.HEADERS_RECEIVED === 2){
 
         swal({
           title: "Success!",
@@ -40,9 +41,9 @@ function Form() {
           button: "ok!",
         });
         window.onload = setTimeout(function(){
-          window.location.reload();
+          //window.location.reload();
           alert('your Request has been initiated successfully you will be notified once it is Completed');
-        }, 17000);
+        }, 5000);
       }
       
     }
@@ -72,6 +73,9 @@ function Form() {
       <div className="App_container">
         <div className= "header">
           <h3>{page_label}</h3>
+        </div>
+        <div className= "header2">
+          <h6>{ Description }</h6>
         </div>
         <div className='div_content'>
           <form>

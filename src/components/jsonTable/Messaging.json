@@ -1,0 +1,154 @@
+[{
+    "id":1,
+    "Name":"Create Shared Mailbox",
+    "Description":"Create a shared mailbox and add users - Mailbox name, mailbox alias, email id, users to be added, permissions for full access, send as, and Calendar Access. Ask for the details from the user",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"createSharedMailbox"
+},
+{
+    "id":2,
+    "Name":"Change Name of a Shared Mailbox",
+    "Description":"Modify shared mailbox settings by sharing the required details",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"modifySharedMailboxName"
+},
+{
+    "id":3,
+    "Name":"Change Email Address of a Shared Mailbox",
+    "Description":"Modify shared mailbox settings by sharing the required details",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"changeSharedMailboxAddress"
+},
+{
+     "id":4,
+     "Name":"Add members to Shared Mailbox",
+    "Description":"Add new members to existing mailbox by providing details",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"addMemberstoSharedMailbox"
+},
+{
+    "id":5,
+    "Name":"Remove members from Shared Mailbox",
+    "Description":"Remove members from existing mailbox by providing detials",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"removeMembersfromSharedMailbox"
+},
+{
+    "id":6,
+    "Name":"Remove Shared Mailbox",
+    "Description":"Delete shared mailbox settings by sharing the required details",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"removeSharedMailbox"
+},
+{
+    "id":7,
+    "Name":"Set MailBox Quota",
+    "Description":"Configure Storage Quota for Exchange Online mailbox as per User requirements or Organizational Policies",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"setMailboxQuota"
+
+},
+{
+    "id":8,
+    "Name":"Create Distribution List",
+    "Description":"A Distribution Group, or A distribution List, is a collection of two or more people that appear on your Organizational address book",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"createDistributionList"
+},
+{
+    "id":9,
+    "Name":"Modify Distribution List",
+    "Description":"A Distribution Group, or A distribution List, is a collection of two or more people that appear on your Organizational address book",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"modifyDistributionList"
+},
+{
+    "id":10,
+    "Name":"Remove Distribution List",
+    "Description":"Remove or delete a distribution list",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"deleteDistributionList"
+},
+{
+    "id":11,
+    "Name":"Manage Mailbox Permission",
+    "Description":"Grant/Revoke user permissions to a user to a designated mailbox",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"manageMailboxPermission"
+},
+{
+    "id":12,
+    "Name":"Mailbox Deletion",
+    "Description":"Grant/Revoke user permissions to a user to Delete a mailbox",
+    "Category":"DW Messaging Service Request",
+    "Enabled":"Y",
+    "FormName":"deleteMailbox"
+},
+{
+   "id":13,
+   "Name":"Modify Primary SMTP Address",
+   "Description":"Primary SMTP Address",
+   "Category":"DW Messaging Service Request",
+   "Enabled":"Y",
+   "FormName":"modifyPrimarySMTP"
+},
+{
+   "id":14,
+   "Name":"Add Secondary SMTP",
+   "Description":"Add Secondary SMTP address",
+   "Category":"DW Messaging Service Request",
+   "Enabled":"Y",
+   "FormName":"addSecondarySMTP"
+},
+{
+   "id":15,
+   "Name":"Remove Secondary SMTP",
+   "Description":"Remove Secondary SMTP address",
+   "Category":"DW Messaging Service Request",
+   "Enabled":"Y",
+   "FormName":"removeSecondarySMTP"
+},
+{
+   "id":16,
+   "Name":"Enable Online Archive",
+   "Description":"Raise a request to enable online Archive for your mailbox by providing the identity details",
+   "Category":"DW Messaging Service Request",
+   "Enabled":"Y",
+   "FormName":"enableOnlineArchive"
+},
+{
+  "id":17,
+  "Name":"Enable Litigation Hold",
+  "Description":"Place a mailbox on Litigation hold to retain all mailbox content, including deleted items and the original versions of modified items",
+  "Category":"DW Messaging Service Request",
+  "Enabled":"Y",
+  "FormName":"enableLitigationHold"
+},
+{
+  "id":18,
+  "Name":"Disable Litigation Hold",
+  "Description":"Remove Litigation Hold on a mailbox",
+  "Category":"DW Messaging Service Request",
+  "Enabled":"Y",
+  "FormName":"disableLitigationHold"
+},
+{
+  "id":19,
+  "Name":"Enable Email Forwarding",
+  "Description":" Email forwarding lets you forward email messages sent to a your mailbox to another mailbox inside or outside of your organization.",
+  "Category":"DW Messaging Service Request",
+  "Enabled":"Y",
+  "FormName":"emailForwarding"
+}
+]

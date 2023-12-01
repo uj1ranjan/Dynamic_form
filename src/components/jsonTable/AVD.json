@@ -1,0 +1,25 @@
+[{
+    "id":1,
+    "Name":"Request for AVD VDI",
+    "Description":"Request for creation of a Pooled or Personal Azure VDI.",
+    "Category":"DW Azure Virtual Desktop",
+    "Enabled":"Y",
+    "FormName":"RequestforAVDVDI"
+},
+{
+    "id":2,
+    "Name":"Request Access to Shared VDI",
+    "Description":"Request for access/ permissions to designated Shared VDI.",
+    "Category":"DW Azure Virtual Desktop",
+    "Enabled":"Y",
+    "FormName":"RequestAccesstoSharedVDI"
+},
+{
+    "id":3,
+    "Name":"Request Additional Resources",
+    "Description":"Request for additional resources for VDI such as CPU /RAM etc.",
+    "Category":"DW Azure Virtual Desktop",
+    "Enabled":"Y",
+    "FormName":"RequestAdditionalResources"
+}
+]

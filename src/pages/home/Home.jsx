@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="home">
       <div className = 'heading'>
-            <h4>Messaging Service Request</h4>
+            <h4>Messaging</h4>
         </div>
       <JsonTable />
     </div>

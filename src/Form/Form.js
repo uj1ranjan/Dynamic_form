@@ -1,8 +1,8 @@
-import formJSON from '../formElement/formElement.json';
+import formJSON from '../formElement/sharedMailbox.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import Element from '../components/Element';
+import swal from 'sweetalert';
 import { FormContext } from '../FormContext';
 
 function Form() {
@@ -13,25 +13,38 @@ function Form() {
   }, [])
   const { fields, page_label } = elements ?? {}
   const handleSubmit = (event) => {
-      event.preventDefault();
+    event.preventDefault();
+    //create a new XMLHttpRequest
+    const xhr = new XMLHttpRequest()
 
-      const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
+    //get a callback when the server responds
+    xhr.addEventListener('load', () => {
+      //update the state of the component with the result here
+      console.log(xhr.responseText)
+    })
+    // open the request with the verb and the url
+    xhr.open('POST', elements.webhookURL)
+    // send the request
+    //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
+    const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
+    
+    
+    xhr.send(JSON.stringify(data))
+    console.log(xhr.HEADERS_RECEIVED);
 
-      axios
-      .post("https://597382c6-0a31-4518-97aa-bbb9a426bb1c.webhook.eus.azure-automation.net/webhooks?token=6Wt2dI3XHwYtE738VQ%2bDSPFrd7UL8l9L%2bToGSl7qra8%3d", JSON.stringify(data))
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        if (error.response) {
-          console.log(error.response);
-          console.log("server responded");
-        } else if (error.request) {
-          console.log("network error");
-        } else {
-          console.log(error);
-        }
+    if(xhr.HEADERS_RECEIVED === 2){
+
+      swal({
+        title: "Success!",
+        text: "Form Submitted Successfully",
+        icon: "success",
+        button: "ok!",
       });
+      window.onload = setTimeout(function(){
+        //window.location.reload();
+        alert('your Request has been initiated successfully you will be notified once it is Completed');
+      }, 5000);
+    }
 }
 
   const handleChange = (id, event) => {

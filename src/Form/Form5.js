@@ -1,4 +1,4 @@
-import formJSON from '../formElement/formElement5.json';
+import formJSON from '../formElement/mailboxDeletion.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
 import Element from '../components/Element';

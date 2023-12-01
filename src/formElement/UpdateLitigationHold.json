@@ -1,0 +1,33 @@
+[
+    {
+        "page_label": "Enable Litigation Hold",
+        "Description": "Place a mailbox on Litigation hold to retain all mailbox content, including deleted items and the original versions of modified items",
+        "WebhookURL": "https://01f82afc-7bfc-431f-b71e-cc4f75976387.webhook.eus.azure-automation.net/webhooks?token=JN%2bHsE1h3LX0PdceVywNaSlKxAdM6Z84FF7Sfis9WNM%3d",
+        "Request_type": "Enable Litigation Hold",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Update Litigation Hold",
+                "field_label": "Add Update Litigation Hold",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Update Litigation Hold",
+                "field_type": "text"
+            }
+        ]
+    }
+            
+]

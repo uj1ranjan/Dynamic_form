@@ -1,0 +1,33 @@
+[
+    {
+        "page_label": "Enable Email Forwarding",
+        "Description": "Email forwarding lets you forward email messages sent to a your mailbox to another mailbox inside or outside of your organization.",
+        "WebhookURL": "https://01f82afc-7bfc-431f-b71e-cc4f75976387.webhook.eus.azure-automation.net/webhooks?token=JN%2bHsE1h3LX0PdceVywNaSlKxAdM6Z84FF7Sfis9WNM%3d",
+        "Request_type": "emailForwarding",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "scTask",
+                "field_label": "sc Task",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "Enable Email Forwarding",
+                "field_label": "Add Enable Email Forwarding",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Enable Email Forwarding",
+                "field_type": "text"
+            }
+        ]
+    }
+            
+]

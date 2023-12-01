@@ -1,9 +1,9 @@
 import "./sidebar.css";
 import {
-  LineStyle,
+  Mail,
   VideoLabel,
   Sort,
-  ScannerTwoTone,
+  Group,
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -12,18 +12,18 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h2 className="sidebarTitle">M365 Request Catalog</h2>
+          <h1 className="sidebarTitle">M365 Request Catalog</h1>
           <ul className="sidebarList">
-            <Link to="/" className="link">
-                <li className="sidebarListItem active">
-                    <LineStyle className="sidebarIcon" />
-                        Messaging
-                </li>
-            </Link>
-            <Link to="/AVD" className="link">
+          <Link to="/AVD" className="link">
                 <li className="sidebarListItem active">
                     <VideoLabel className="sidebarIcon" />
                     Azure Virtual Desktop
+                </li>
+            </Link>
+            <Link to="/Collaboration" className="link">
+                <li className="sidebarListItem active">
+                    <Group className="sidebarIcon" />
+                    Collaboration
                 </li>
             </Link>
             <Link to="/END" className="link">
@@ -32,12 +32,14 @@ export default function Sidebar() {
                     Endpoint Management
                 </li>
             </Link>
-            <Link to="/Collaboration" className="link">
+            <Link to="/" className="link">
                 <li className="sidebarListItem active">
-                    <ScannerTwoTone className="sidebarIcon" />
-                    Collaboration
+                    <Mail className="sidebarIcon" />
+                        Messaging
                 </li>
             </Link>
+
+            
           </ul>
         </div>
       </div>

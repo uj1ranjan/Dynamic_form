@@ -1,4 +1,4 @@
-import formJSON from '../formElement/modifyPrimarySMTP.json';
+import formJSON from '../formElement/AddSecondarySMTP.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
 import Element from '../components/Element';
@@ -11,27 +11,27 @@ function Form() {
     setElements(formJSON[0])
 
   }, [])
-  const { fields, page_label, Description, WebhookURL } = elements ?? {}
+  const { fields, page_label, Description, WebhookURL} = elements ?? {}
   const handleSubmit = (event) => {
-      event.preventDefault();
+    event.preventDefault();
       //create a new XMLHttpRequest
-      const xhr = new XMLHttpRequest()
+    const xhr = new XMLHttpRequest()
   
       //get a callback when the server responds
-      xhr.addEventListener('load', () => {
+    xhr.addEventListener('load', () => {
         //update the state of the component with the result here
         console.log(xhr.responseText)
-      })
+    })
       // open the request with the verb and the url
       xhr.open('POST', WebhookURL)
-      console.log(WebhookURL)
+    
       // send the request
       //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
-      const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
-      console.log(data)
-      
-      
-      xhr.send(JSON.stringify(data))
+    const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
+    Object.assign(data, {Source : 'SelfService', Request_Type : 'AddSecondarySMTP', requestraisedby : 'CloudOps1'})
+    console.log(data)
+
+    xhr.send(JSON.stringify(data))
 
       if(xhr.HEADERS_RECEIVED === 2){
 
@@ -46,8 +46,7 @@ function Form() {
           alert('your Request has been initiated successfully you will be notified once it is Completed');
         }, 5000);
       }
-      
-    }
+  }
   const handleChange = (id, event) => {
     const newElements = { ...elements }
     newElements.fields.forEach(field => {

@@ -1,0 +1,25 @@
+[{
+    "id":1,
+    "Name":"Infrastructure Management",
+    "Description":"Request for Disk Cleanup of AVD Pooled / Personal Desktops.",
+    "Category":"DW Coolaboration",
+    "Enabled":"Y",
+    "FormName":"InfrastructureManagement"
+},
+{
+    "id":2,
+    "Name":"Session Logoff",
+    "Description":"Reset VM Users with either login issue or facing unresponsive VM sessions",
+    "Category":"DW Coolaboration",
+    "Enabled":"Y",
+    "FormName":"SessionLogoff"
+},
+{
+    "id":3,
+    "Name":"Provision MS Teams",
+    "Description":"Request for creation of Private/ Public Teams for collaboration",
+    "Category":"DW Coolaboration",
+    "Enabled":"Y",
+    "FormName":"ProvisionMSTeams"
+}
+]

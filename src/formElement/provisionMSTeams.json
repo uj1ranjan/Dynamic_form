@@ -17,6 +17,49 @@
                 "field_type": "text"
             },
             {
+                "field_id":"Request Type",
+                "field_mandatory": "yes",
+                "field_value": "req-type",
+                "field_placeholder": "Enter Request Type",
+                "field_label": "Request Type",
+                "field_options": [
+                    {
+                        "option_label": "ModifyPrimarySMTP"
+                    },
+                    {
+                        "option_label": "AddSecondarySMTP"
+                    },
+                    {
+                        "option_label": "RemoveSecondarySMTP"
+                    },
+                    {
+                        "option_label": "EnableOnlineArchive"
+                    },
+                    {
+                        "option_label": "UpdateLitigationHold"
+                    },
+                    {
+                        "option_label": "EnableEmailForwarding"
+                    },
+                    {
+                        "option_label": "DisableEmailForwarding"
+                    },
+                    {
+                        "option_label": "Delete"
+                    }
+                ],
+                "field_type": "select"
+
+            },
+            {
+                "field_id":"Source",
+                "field_value":"Self Service",
+                "field_label": "Source",
+                "field_mandatory":"yes",
+                "field_type":"text"
+
+            },
+            {
                 "field_id": "Team_Name",
                 "field_label": "Team Name",
                 "field_mandatory": "yes",

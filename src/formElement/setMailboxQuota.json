@@ -1,26 +1,30 @@
 [
     {
         "page_label": "Set MailBox Quota",
+        "Description": "Configure Storage Quota for Exchange Online mailbox as per User requirements or Organizational Policies",
+        "webhookURL": "https://51c75f29-fc28-4c77-8845-3c8e3ce99f6b.webhook.eus.azure-automation.net/webhooks?token=vtFsWGTcM1KAwUFofXiSQABDlWCPME0SFjMLZ4GUV%2bs%3d",
+        "Request_type": "AddSecondarySMTP",
+        "Source": "SelfService",
         "fields": [
             {
-                "field_id": "scTask",
-                "field_label": "sc Task",
+                "field_id": "SCTaskNo",
+                "field_label": "SC TaskNo",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Requested for",
+                "field_placeholder": "Enter Task Number",
                 "field_type": "text"
             },
             {
                 "field_id": "RITM Number",
                 "field_label": "RITM No.",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Requested for",
+                "field_placeholder": "Enter RITM No.",
                 "field_type": "text"
-            },
+            }, 
             {
                 "field_id": "email_id",
                 "field_label": "Email id",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Account name",
+                "field_placeholder": "Enter Email id",
                 "field_type": "text",
                 "field_value": ""
             },
@@ -28,23 +32,25 @@
                 "field_id": "warningquota",
                 "field_label": "Warning quota",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter MailBox Size",
+                "field_placeholder": "Enter Warning quota",
                 "field_type": "text"
             },
             {
                 "field_id": "sendquota",
                 "field_label": "Send quota",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Requested By",
+                "field_placeholder": "Enter Send quota",
                 "field_type": "text"
             },
             {
                 "field_id": "receivequota",
                 "field_label": "Receive quota",
                 "field_mandatory": "yes",
-                "field_placeholder": "Enter Requested for",
+                "field_placeholder": "Enter receivequota",
                 "field_type": "text"
             }
+            
+
             
         ]
     }

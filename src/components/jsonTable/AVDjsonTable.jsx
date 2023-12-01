@@ -1,54 +1,52 @@
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import row from './AVD.json';
 import img from "./icons8-edit-64-2.png"
 
 
 const JsonTable = () => {
 
-    const columns = [
-        { field: 'id', headerName: 'ID', width: 70 },
-        
-        {
-          field: 'Categoryname',
-          headerName: 'Category name',
-          description: 'This column is a category name',
-          width: 150,
-          editable: true,
-        },
-        {
-          field: 'Catalogitem',
-          headerName: 'Catalog item',
-          description: 'This column is a Catalog Item name',
-          width: 150,
-          editable: true,
-        },
-        {
-            field: 'Description',
-            headerName: 'Description',
-            description: 'This column is a Catalog Item name Description',
-            width: 400,
-            editable: true,
-        },
-        {
-            field: "actions",
-            headerName: "Actions",
-            width: 150,
-            renderCell: (params) => {
-                return <div className="action">
-                    <Link to={`${params.row.Catalogitem}`}>
-                        <img src = {img} alt="Edit"/>
-                    </Link>
-                </div>
-            }
+  const columns = [
+    { field: 'id', headerName: <div style={{textDecoration:'underline'}}><b>ID</b></div>, width: 30 },
+    
+    {
+      field: 'Name',
+      headerName: <div style={{textDecoration:'underline'}}><b>Name</b></div>,
+      description: 'This column is a category item name',
+      width: 250,
+      editable: true,
+      sortable: true
+    },
+    {
+        field: 'Description',
+        headerName: <div style={{textDecoration:'underline'}}><b>Short Description</b></div>,
+        description: 'This column is a Catalog Item name Description',
+        width: 400,
+        editable: true,
+        sortable: true
+    },
+    {
+        field: "actions",
+        headerName: <div style={{textDecoration:'underline'}}><b>Actions</b></div>,
+        width: 80,
+        renderCell: (params) => {
+            return <div className="action">
+                <Link to={`${params.row.FormName}`}>
+                    <img src = {img} alt="Edit"/>
+                </Link>
+            </div>
         }
-      ];
-      
-      const row = [
-        { id: 1, Categoryname: 'Azure Virtual Desktop', Catalogitem: 'Request for AVD VDI', Description: 'Request for creation of a Pooled or Personal Azure VDI.'},
-        { id: 2, Categoryname: 'Azure Virtual Desktop', Catalogitem: 'Request Access to Shared VDI', Description: 'Request for access/ permissions to designated Shared VDI.'},
-        { id: 3, Categoryname: 'Azure Virtual Desktop', Catalogitem: 'Request Additional Resources', Description: 'Request for additional resources for VDI such as CPU /RAM etc.'},
-      ];
+    },
+    {
+      field: 'Category',
+      headerName: <div style={{textDecoration:'underline'}}><b>Category</b></div>,
+      description: 'This column is a category item name',
+      width: 250,
+      editable: true,
+      sortable: true
+    }
+  ];
       
 
   return (

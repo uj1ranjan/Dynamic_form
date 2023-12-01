@@ -1,18 +1,22 @@
 .topbar {
     width: 100%;
-    height: 50px;
-    background-color: rgb(113, 163, 228);
-    position: sticky;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    margin-bottom: 10px;
     top: 0;
     z-index: 999;
+
   }
   
   .topbarWrapper {
     height: 100%;
-    padding: 0px 20px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width:max-content;
+    height:50px;
   }
   
   .logo {
@@ -22,16 +26,21 @@
     color: rgb(243, 243, 247);
     cursor: pointer;
   }
+
+  .topleft{
+    width:max-content;
+    height:50px;
+  }
   
   .topRight{
       display: flex;
       align-items: center;
   }
   
+  
   .topbarIconContainer {
     position: relative;
     cursor: pointer;
-    margin-right: 10px;
     color: #555;
   }
   
@@ -55,4 +64,8 @@
       height: 40px;
       border-radius: 50%;
       cursor: pointer;
+  }
+
+  .item{
+    margin-left: 900px;
   }
