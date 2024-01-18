@@ -66,7 +66,7 @@ export const AccountPicker = (props) => {
                                 <IconContext.Provider value={{ size: '1.5rem' }}>
                                     <BsPersonCircle />
                                 </IconContext.Provider>
-                                <p className="iconText">{account.name}</p>
+                                <p className="iconText">{account.tenantId}</p>
                             </ListGroup.Item>
                         ))}
                         <ListGroup.Item

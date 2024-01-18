@@ -2,20 +2,20 @@
     {
         "page_label": "Set MailBox Quota",
         "Description": "Configure Storage Quota for Exchange Online mailbox as per User requirements or Organizational Policies",
-        "webhookURL": "https://51c75f29-fc28-4c77-8845-3c8e3ce99f6b.webhook.eus.azure-automation.net/webhooks?token=vtFsWGTcM1KAwUFofXiSQABDlWCPME0SFjMLZ4GUV%2bs%3d",
-        "Request_type": "AddSecondarySMTP",
+        "WebhookURL": "https://94986006-2cf6-4e62-89ad-1bd1053bd111.webhook.eus.azure-automation.net/webhooks?token=rBZ5QN3CDuLZTUQ9MffA26%2bh%2bgWtb5wzdnuxAR4LZ%2bI%3d",
+        "Request_type": "Set Mailbox Quota",
         "Source": "SelfService",
         "fields": [
             {
-                "field_id": "SCTaskNo",
-                "field_label": "SC TaskNo",
+                "field_id": "TaskNumber",
+                "field_label": "Task Number",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter Task Number",
                 "field_type": "text"
             },
             {
-                "field_id": "RITM Number",
-                "field_label": "RITM No.",
+                "field_id": "RITMNumber",
+                "field_label": "RITM Number",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter RITM No.",
                 "field_type": "text"

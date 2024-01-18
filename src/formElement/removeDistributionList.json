@@ -1,9 +1,9 @@
 [
     {
-        "page_label": "Create Distribution List",
-        "Description": "Add a distribution list.",
+        "page_label": "Remove Distribution List",
+        "Description": "Remove distribution list.",
         "WebhookURL": "",
-        "Request_type": "Create Distribution List",
+        "Request_type": "Remove Distribution List",
         "Source": "SelfService",
         "fields": [
             {

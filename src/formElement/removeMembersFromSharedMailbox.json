@@ -1,0 +1,50 @@
+[
+    {
+        "page_label": "Remove Members from Shared Mailbox",
+        "Description": "To add members, select Add members, search for or select a member to add, and then select Save.",
+        "WebhookURL": "",
+        "Request_type": "Remove Members from Shared MailBox",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "TaskNo",
+                "field_label": "TaskNo",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "shared_mailbox_name",
+                "field_label": "Mailbox Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter shared mailbox name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "Remove Members",
+                "field_label": "Mailbox Users",
+                "field_value": "Part-Time",
+                "field_mandatory": "yes",
+                "field_options": [
+                    {
+                        "option_label": "URanjan@its.jnj.com"
+                    },
+                    {
+                        "option_label": "Neeraj@its.jnj.com"
+                    }
+                ],
+                "field_type": "select"
+            }
+            
+            
+        ]
+    }
+]

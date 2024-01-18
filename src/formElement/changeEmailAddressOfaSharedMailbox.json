@@ -1,0 +1,48 @@
+[
+    {
+        "page_label": "Change EmailAddress of a Shared Mailbox",
+        "Description": "Select the shared mailbox you want to edit, and then select Edit under Email addresses.",
+        "WebhookURL": "",
+        "Request_type": "Change EmailAddress of a Shared MailBox",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "TaskNo",
+                "field_label": "TaskNo",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "shared_mailbox_name",
+                "field_label": "Mailbox Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter shared mailbox name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "email",
+                "field_label": "Email",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter email",
+                "field_type": "text"
+            },
+            {
+                "field_id": "alias",
+                "field_label": "Alias",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter alias",
+                "field_type": "text"
+            }
+            
+        ]
+    }
+]

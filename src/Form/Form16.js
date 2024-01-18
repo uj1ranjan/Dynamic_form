@@ -1,8 +1,9 @@
-import formJSON from '../formElement/addMembersToSharedMailbox.json';
+import formJSON from '../formElement/removeDistributionList.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
 import Element from '../components/Element';
 import { FormContext } from '../FormContext';
+import swal from 'sweetalert';
 
 function Form() {
   const [elements, setElements] = useState(null);
@@ -12,10 +13,38 @@ function Form() {
   }, [])
   const { fields, page_label, Description, webhookURL } = elements ?? {}
   const handleSubmit = (event) => {
-    event.preventDefault();
+      event.preventDefault();
+      //create a new XMLHttpRequest
+      const xhr = new XMLHttpRequest()
+  
+      //get a callback when the server responds
+      xhr.addEventListener('load', () => {
+        //update the state of the component with the result here
+        console.log(xhr.responseText)
+      })
+      // open the request with the verb and the url
+      xhr.open('POST', 'https://51c75f29-fc28-4c77-8845-3c8e3ce99f6b.webhook.eus.azure-automation.net/webhooks?token=vtFsWGTcM1KAwUFofXiSQABDlWCPME0SFjMLZ4GUV%2bs%3d')
+      // send the request
+      //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
+      const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
+      
+      
+      xhr.send(JSON.stringify(data))
 
-    console.log(elements)
-  }
+      if(xhr.status === 0){
+
+        swal({
+          title: "Success!",
+          text: "Form Submitted Successfully",
+          icon: "success",
+          button: "ok!",
+        });
+        window.onload = setTimeout(function(){
+          alert('your Request has been initiated successfully you will be notified once it is Completed');
+        }, 17000);
+      }
+      
+    }
   const handleChange = (id, event) => {
     const newElements = { ...elements }
     newElements.fields.forEach(field => {

@@ -70,6 +70,9 @@ export default function Topbar() {
         <div>
           <img className="topleft" src={mainLogo}></img>
         </div>
+        <div>
+            <h6 className="topleft2" > {activeAccount.username.split('@')[1]} </h6>
+        </div>
         <div className="topRight">
         <div className="item">
             <AuthenticatedTemplate>

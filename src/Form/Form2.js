@@ -1,6 +1,7 @@
 import formJSON from '../formElement/setMailboxQuota.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Element from '../components/Element';
 import { FormContext } from '../FormContext';
 import swal from 'sweetalert';
@@ -11,9 +12,14 @@ function Form() {
     setElements(formJSON[0])
 
   }, [])
-  const { fields, page_label, Description, webhookURL } = elements ?? {}
+
+  const navigate = useNavigate()
+
+  const { fields, page_label, Description, WebhookURL } = elements ?? {}
+
   const handleSubmit = (event) => {
       event.preventDefault();
+
       //create a new XMLHttpRequest
       const xhr = new XMLHttpRequest()
   
@@ -23,12 +29,11 @@ function Form() {
         console.log(xhr.responseText)
       })
       // open the request with the verb and the url
-      xhr.open('POST', webhookURL)
-      console.log(webhookURL)
+      xhr.open('POST', WebhookURL)
       // send the request
       //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
       const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
-      
+      Object.assign(data, {Source : 'SelfService', Request_Type : '', requestraisedby : 'CloudOps1@TCSTEG.onmicrosoft.com'})
       
       xhr.send(JSON.stringify(data))
 
@@ -45,8 +50,13 @@ function Form() {
           alert('your Request has been initiated successfully you will be notified once it is Completed');
         }, 5000);
       }
-      
-    }
+
+      navigate('/')
+      setElements({
+        
+      })
+  }
+
   const handleChange = (id, event) => {
     const newElements = { ...elements }
     newElements.fields.forEach(field => {
@@ -66,7 +76,6 @@ function Form() {
       }
       setElements(newElements)
     });
-    console.log(elements)
   }
   return (
     <FormContext.Provider value={{ handleChange }}>

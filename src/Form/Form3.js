@@ -10,7 +10,7 @@ function Form() {
     setElements(formJSON[0])
 
   }, [])
-  const { fields, page_label } = elements ?? {}
+  const { fields, page_label, Description, webhookURL } = elements ?? {}
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -42,6 +42,9 @@ function Form() {
       <div className="App_container">
         <div className= "header">
           <h3>{page_label}</h3>
+        </div>
+        <div className= "header2">
+          <h6>{ Description }</h6>
         </div>
         <div className='div_content'>
           <form>

@@ -10,7 +10,7 @@
     "id":2,
     "Name":"Intune",
     "Description":"Request to provide hardware and software inventory for Intune managed devices.",
-    "Category":"DW Collaboration",
+    "Category":"DW Endpoint Management",
     "Enabled":"Y",
     "FormName":"Intune"
 }

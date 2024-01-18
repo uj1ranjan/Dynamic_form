@@ -1,0 +1,56 @@
+[
+    {
+        "page_label": "Add Members To Shared Mailbox",
+        "Description": "add users - Mailbox name, email id, users to be added. Ask for the details from the user",
+        "WebhookURL": "",
+        "Request_type": "Add Members To Set Shared MailBox",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "TaskNo",
+                "field_label": "TaskNo",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "number"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "number"
+            },
+            {
+                "field_id": "shared_mailbox_name",
+                "field_label": "Mailbox Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter shared mailbox name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "email",
+                "field_label": "Email",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter email",
+                "field_type": "email"
+            },
+            {
+                "field_id": "Add Members",
+                "field_label": "Mailbox Users",
+                "field_value": "Part-Time",
+                "field_mandatory": "yes",
+                "field_options": [
+                    {
+                        "option_label": "URanjan@its.jnj.com"
+                    },
+                    {
+                        "option_label": "Neeraj@its.jnj.com"
+                    }
+                ],
+                "field_type": "select"
+            }
+            
+        ]
+    }
+]

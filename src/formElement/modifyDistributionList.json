@@ -1,9 +1,9 @@
 [
     {
-        "page_label": "Create Distribution List",
-        "Description": "Add a distribution list.",
+        "page_label": "Modify Distribution List",
+        "Description": "Modify a distribution list.",
         "WebhookURL": "",
-        "Request_type": "Create Distribution List",
+        "Request_type": "Modify Distribution List",
         "Source": "SelfService",
         "fields": [
             {

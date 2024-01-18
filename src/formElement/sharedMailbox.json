@@ -1,12 +1,14 @@
 [
     {
         "page_label": "Shared Mailbox",
-        "WebhookURL": "https://597382c6-0a31-4518-97aa-bbb9a426bb1c.webhook.eus.azure-automation.net/webhooks?token=6Wt2dI3XHwYtE738VQ%2bDSPFrd7UL8l9L%2bToGSl7qra8%3d",
-        "Request_type":"",
+        "Description": "Create a shared mailbox and add users - Mailbox name, mailbox alias, email id, users to be added, permissions for full access, send as, and Calendar Access. Ask for the details from the user",
+        "WebhookURL": "https://51c75f29-fc28-4c77-8845-3c8e3ce99f6b.webhook.eus.azure-automation.net/webhooks?token=sMSrkgs6DAHYW7kRLJjRoKKLi62oLYAvDMB7OIujQFw%3d",
+        "Request_type": "Set Shared MailBox",
+        "Source": "SelfService",
         "fields": [
             {
-                "field_id": "SCTaskNo",
-                "field_label": "SC TaskNo",
+                "field_id": "TaskNo",
+                "field_label": "TaskNo",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter Requested for",
                 "field_type": "text"
@@ -17,16 +19,6 @@
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter Requested for",
                 "field_type": "text"
-            },
-            {
-                "field_id":"Source",
-                "field_value":"Self Service",
-                "field_label": "Source",
-                "field_mandatory":"yes",
-                "field_type":"text"
-                
-                
-
             },
             {
                 "field_id": "shared_mailbox_name",
@@ -76,19 +68,19 @@
                 "field_id": "full_access",
                 "field_label": "I confirm to have full-Access license.",
                 "field_type": "checkbox",
-                "field_value": "checked"
+                "field_value": ""
             },
             {
                 "field_id": "send_as",
                 "field_label": "I confirm to have Send Access.",
                 "field_type": "checkbox",
-                "field_value": "checked"
+                "field_value": ""
             },
             {
                 "field_id": "calendar_access",
                 "field_label": "I confirm to have Calender Access.",
                 "field_type": "checkbox",
-                "field_value": "checked"
+                "field_value": ""
             }
             
         ]

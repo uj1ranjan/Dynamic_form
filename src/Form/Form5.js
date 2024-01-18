@@ -1,4 +1,4 @@
-import formJSON from '../formElement/mailboxDeletion.json';
+import formJSON from '../formElement/changeEmailAddressOfaSharedMailbox.json';
 import "./form.css";
 import { useState, useEffect } from 'react';
 import Element from '../components/Element';
@@ -11,7 +11,7 @@ function Form() {
     setElements(formJSON[0])
 
   }, [])
-  const { fields, page_label } = elements ?? {}
+  const { fields, page_label, Description, webhookURL } = elements ?? {}
   const handleSubmit = (event) => {
       event.preventDefault();
       //create a new XMLHttpRequest
@@ -71,6 +71,9 @@ function Form() {
       <div className="App_container">
         <div className= "header">
           <h3>{page_label}</h3>
+        </div>
+        <div className= "header2">
+          <h6>{ Description }</h6>
         </div>
         <div className='div_content'>
           <form>

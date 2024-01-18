@@ -21,5 +21,21 @@
     "Category":"DW Azure Virtual Desktop",
     "Enabled":"Y",
     "FormName":"RequestAdditionalResources"
+},
+{
+    "id":4,
+    "Name":"Infrastructure Management",
+    "Description":"Request for Disk Cleanup of AVD Pooled / Personal Desktops.",
+    "Category":"DW Azure Virtual Desktop",
+    "Enabled":"Y",
+    "FormName":"InfrastructureManagement"
+},
+{
+    "id":5,
+    "Name":"Session Logoff",
+    "Description":"Reset VM Users with either login issue or facing unresponsive VM sessions",
+    "Category":"DW Azure Virtual Desktop",
+    "Enabled":"Y",
+    "FormName":"SessionLogoff"
 }
 ]

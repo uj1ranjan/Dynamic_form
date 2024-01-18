@@ -1,0 +1,41 @@
+[
+    {
+        "page_label": "Change Name of a Shared Mailbox",
+        "Description": "Select the shared mailbox you want to edit, and then select Edit under Basic information.",
+        "WebhookURL": "",
+        "Request_type": "Change Name of a Shared MailBox",
+        "Source": "SelfService",
+        "fields": [
+            {
+                "field_id": "TaskNo",
+                "field_label": "TaskNo",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Task No.",
+                "field_type": "text"
+            },
+            {
+                "field_id": "RITM Number",
+                "field_label": "RITM No.",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter Requested for",
+                "field_type": "text"
+            },
+            {
+                "field_id": "shared_mailbox_name",
+                "field_label": "Mailbox Name",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter shared mailbox name",
+                "field_type": "text",
+                "field_value": ""
+            },
+            {
+                "field_id": "New Name of Shared Mailbox",
+                "field_label": "New Name of Shared Mailbox",
+                "field_mandatory": "yes",
+                "field_placeholder": "Enter New Name of Shared Mailbox",
+                "field_type": "text"
+            }
+            
+        ]
+    }
+]

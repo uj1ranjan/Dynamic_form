@@ -20,6 +20,10 @@ import Form10 from "./Form/Form10";
 import Form11 from "./Form/Form11";
 import Form12 from "./Form/Form12";
 import Form13 from "./Form/Form13";
+import Form14 from "./Form/Form14";
+import Form15 from "./Form/Form15";
+import Form16 from "./Form/Form16";
+import Form17 from "./Form/Form17";
 
 const App = ({ instance }) => {
   return (
@@ -37,11 +41,11 @@ const App = ({ instance }) => {
             <Route path="/AVD" element={<AVDHome />} />
             <Route path="/END" element={<ENDHome />} />
             <Route path="/Collaboration" element={<CollabHome />} />
-            <Route className = "wrapper" path="/DW Messaging Service Request-sharedMailbox" element={<Form />} />
+            <Route className = "wrapper" path="/createSharedMailbox" element={<Form />} />
             <Route className = "wrapper" path="/setMailboxQuota" element={<Form2 />} />
-            <Route className = "wrapper" path="/DW Messaging Service Request-createDistributionList" element={<Form3 />} />
-            <Route className = "wrapper" path="/DW Messaging Service Request-manageMailboxPermission" element={<Form4 />} />
-            <Route className = "wrapper" path="/DW Messaging Service Request-Mailboxdeletion" element={<Form5 />} />
+            <Route className = "wrapper" path="/createDistributionList" element={<Form3 />} />
+            <Route className = "wrapper" path="/addMemberstoSharedMailbox" element={<Form4 />} />
+            <Route className = "wrapper" path="/changeSharedMailboxAddress" element={<Form5 />} />
             <Route className = "wrapper" path="/Collaboration/ProvisionMSTeams" element={<Form6 />} />
             <Route className = "wrapper" path="/modifyPrimarySMTP" element={<Form7 />} />
             <Route className = "wrapper" path="/addSecondarySMTP" element={<Form8 />} />
@@ -50,6 +54,10 @@ const App = ({ instance }) => {
             <Route className = "wrapper" path="/" element={<Form11 />} />
             <Route className = "wrapper" path="/enableOnlineArchive" element={<Form12 />} />
             <Route className = "wrapper" path="/enableLitigationHold" element={<Form13 />} />
+            <Route className = "wrapper" path="/modifySharedMailboxName" element={<Form14 />} />
+            <Route className = "wrapper" path="/modifyDistributionList" element={<Form15 />} />
+            <Route className = "wrapper" path="/deleteDistributionList" element={<Form16 />} />
+            <Route className = "wrapper" path="/removeMembersfromSharedMailbox" element={<Form17 />} />
           </Routes>
           </div>
       </Router>

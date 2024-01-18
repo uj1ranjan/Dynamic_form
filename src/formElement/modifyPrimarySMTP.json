@@ -1,35 +1,35 @@
 [
     {
         "page_label": "Modify Secondary SMTP Address",
-        "Description": "Primary SMTP Address",
-        "WebhookURL": "https://51c75f29-fc28-4c77-8845-3c8e3ce99f6b.webhook.eus.azure-automation.net/webhooks?token=utDejaUapCWGwJv%2b81wb5ST%2bzAwEMBzoQmgcX2Jydn4%3d",
+        "Description": "New Primary SMTP Address",
+        "WebhookURL": "https://94986006-2cf6-4e62-89ad-1bd1053bd111.webhook.eus.azure-automation.net/webhooks?token=4WRMmcQUGE0bgmCEKQ7Bokw6kx%2f7UeG0m%2bJ11lhEBMo%3d",
         "Request_type": "ModifySecondarySMTP",
         "Source": "SelfService",
         "fields": [
             {
-                "field_id": "scTask",
-                "field_label": "sc Task",
+                "field_id": "tasknumber",
+                "field_label": "Task Number",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter SC Task Number",
                 "field_type": "text"
             },
             {
-                "field_id": "RITM Number",
-                "field_label": "RITM No.",
+                "field_id": "ritmnumber",
+                "field_label": "RITM Number",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter RITM Number",
                 "field_type": "text"
             },
             {
-                "field_id": "Primary SMTP Address",
-                "field_label": "Primary SMTP Address",
+                "field_id": "NewPrimarySMTP",
+                "field_label": "New Primary SMTP",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter Primary SMTP Address",
                 "field_type": "text"
             },
             {
-                "field_id": "SMTP Address",
-                "field_label": "New SMTP Address",
+                "field_id": "EmailAddress",
+                "field_label": "Email Address",
                 "field_mandatory": "yes",
                 "field_placeholder": "Enter New SMTP Address",
                 "field_type": "text"

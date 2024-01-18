@@ -11,7 +11,7 @@ function Form() {
     setElements(formJSON[0])
 
   }, [])
-  const { fields, page_label } = elements ?? {}
+  const { fields, page_label, Description, WebhookURL  } = elements ?? {}
   const handleSubmit = (event) => {
     event.preventDefault();
     //create a new XMLHttpRequest
@@ -20,17 +20,16 @@ function Form() {
     //get a callback when the server responds
     xhr.addEventListener('load', () => {
       //update the state of the component with the result here
-      console.log(xhr.responseText)
     })
     // open the request with the verb and the url
-    xhr.open('POST', elements.webhookURL)
+    xhr.open('POST', WebhookURL)
+    console.log(WebhookURL)
     // send the request
     //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
     const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
-    
+    Object.assign(data, {Source : 'SelfService', Request_Type : '', requestraisedby : 'CloudOps1@TCSTEG.onmicrosoft.com'})
     
     xhr.send(JSON.stringify(data))
-    console.log(xhr.HEADERS_RECEIVED);
 
     if(xhr.HEADERS_RECEIVED === 2){
 
@@ -44,6 +43,8 @@ function Form() {
         //window.location.reload();
         alert('your Request has been initiated successfully you will be notified once it is Completed');
       }, 5000);
+
+      
     }
 }
 
@@ -73,6 +74,9 @@ function Form() {
       <div className="App_container">
         <div className= "header">
           <h3>{page_label}</h3>
+        </div>
+        <div className= "header2">
+          <h6>{ Description }</h6>
         </div>
         <div className='div_content'>
           <form>

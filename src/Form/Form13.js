@@ -28,6 +28,7 @@ function Form() {
       // send the request
       //xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
       const data = elements.fields.reduce((obj, curr) => ({...obj, [curr.field_id]: curr.field_value}), {})
+      Object.assign(data, {Source : 'SelfService', Request_Type : '', requestraisedby : 'CloudOps1@TCSTEG.onmicrosoft.com'})
       console.log(data)
       
       

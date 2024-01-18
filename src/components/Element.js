@@ -2,6 +2,9 @@ import React from 'react'
 import Checkbox from './elements/Checkbox';
 import Input from './elements/Input';
 import Select from './elements/Select';
+import InputNumber from './elements/InputNumber';
+import InputEmail from './elements/InputEmail';
+
 const Element = ({ field: { field_type, field_id, field_label, field_placeholder, field_value, field_options } }) => {
 
     switch (field_type) {
@@ -12,6 +15,22 @@ const Element = ({ field: { field_type, field_id, field_label, field_placeholder
                 field_placeholder={field_placeholder}
                 field_value={field_value}
 
+            />)
+            case 'number':
+                return (<InputNumber
+                    field_id={field_id}
+                    field_label={field_label}
+                    field_placeholder={field_placeholder}
+                    field_value={field_value}
+    
+            />)
+            case 'email':
+                return (<InputEmail
+                    field_id={field_id}
+                    field_label={field_label}
+                    field_placeholder={field_placeholder}
+                    field_value={field_value}
+    
             />)
         case 'select':
             return (<Select
